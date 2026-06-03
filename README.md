@@ -9,7 +9,28 @@ The objective was to provide secure remote access to internal company resources 
 This project includes VPN user administration, FortiClient configuration, remote access troubleshooting, and user support activities.
 
 ---
+## VPN Connectivity Flow
 
+```text
+Remote User
+     │
+     ▼
+ FortiClient VPN
+     │
+     ▼
+ FortiGate Firewall
+     │
+     ▼
+ Authentication
+(Local User / Active Directory)
+     │
+     ▼
+ Internal Resources
+ ├── File Servers
+ ├── Shared Folders
+ ├── Internal Applications
+ └── Domain Resources
+```
 # Environment
 
 ## Technologies Used
